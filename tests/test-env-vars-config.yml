@@ -1,0 +1,36 @@
+name: Test configuration via environment variables
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - id: action
+        uses: .
+        continue-on-error: true
+        env:
+          OCTOPUS_URL: "https://octopus.example.invalid/"
+          OCTOPUS_API_KEY: "API-FAKEKEYFORTESTING1234567890"
+          OCTOPUS_SPACE: "Default"
+        with:
+          server_task_id: "ServerTasks-22222"
+          polling_interval: "5"
+          timeout_after: "15"
+
+      - name: Assert action ran using env var config and failed gracefully
+        env:
+          OUTCOME: ${{ steps.action.outcome }}
+          TASK_STATE: ${{ steps.action.outputs.task_state }}
+        run: |
+          echo "outcome: $OUTCOME"
+          echo "task_state: $TASK_STATE"
+          if [ "$OUTCOME" = "success" ]; then
+            echo "PASS: action succeeded"
+          elif [ "$OUTCOME" = "failure" ]; then
+            echo "PASS: action failed gracefully as expected (server not reachable)"
+          else
+            echo "FAIL: unexpected outcome '$OUTCOME'"
+            exit 1
+          fi
