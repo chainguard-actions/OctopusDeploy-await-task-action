@@ -1,0 +1,37 @@
+name: Test configuration via environment variables
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - id: action
+        uses: .
+        continue-on-error: true
+        env:
+          OCTOPUS_URL: https://invalid.octopus.example.com/
+          OCTOPUS_API_KEY: API-FAKEKEYFORTESTING1234567890
+          OCTOPUS_SPACE: Default
+        with:
+          server_task_id: ServerTasks-77777
+          polling_interval: '5'
+          timeout_after: '30'
+
+      - name: Assert action failed gracefully using env var config
+        env:
+          OUTCOME: ${{ steps.action.outcome }}
+          TASK_STATE: ${{ steps.action.outputs.task_state }}
+        run: |
+          echo "outcome: $OUTCOME"
+          echo "task_state: $TASK_STATE"
+          if [ "$OUTCOME" = "failure" ]; then
+            echo "PASS: action failed gracefully as expected (no real Octopus server, config via env vars)"
+          elif [ "$OUTCOME" = "success" ]; then
+            echo "FAIL: action unexpectedly succeeded with invalid credentials"
+            exit 1
+          else
+            echo "FAIL: unexpected outcome '$OUTCOME'"
+            exit 1
+          fi
