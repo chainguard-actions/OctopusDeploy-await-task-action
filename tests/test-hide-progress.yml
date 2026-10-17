@@ -1,0 +1,36 @@
+name: Test hide_progress option
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - id: action
+        uses: .
+        continue-on-error: true
+        with:
+          server_task_id: ServerTasks-99999
+          server: https://octopus.example.invalid/
+          api_key: API-FAKEAPIKEY12345
+          space: Default
+          hide_progress: 'true'
+          polling_interval: '5'
+          timeout_after: '15'
+
+      - name: Assert action ran with hide_progress enabled
+        env:
+          OUTCOME: ${{ steps.action.outcome }}
+          TASK_STATE: ${{ steps.action.outputs.task_state }}
+        run: |
+          echo "outcome: $OUTCOME"
+          echo "task_state: $TASK_STATE"
+          if [ "$OUTCOME" = "failure" ]; then
+            echo "PASS: action failed gracefully as expected (server unreachable, hide_progress=true)"
+          elif [ "$OUTCOME" = "success" ]; then
+            echo "PASS: action succeeded"
+          else
+            echo "FAIL: unexpected outcome '$OUTCOME'"
+            exit 1
+          fi

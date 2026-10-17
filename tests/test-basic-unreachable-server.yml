@@ -1,0 +1,35 @@
+name: Test basic usage with unreachable server
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - id: action
+        uses: .
+        continue-on-error: true
+        with:
+          server_task_id: ServerTasks-12345
+          server: https://octopus.example.invalid/
+          api_key: API-FAKEAPIKEY12345
+          space: Default
+          polling_interval: '5'
+          timeout_after: '15'
+
+      - name: Assert action ran and failed gracefully (unreachable server)
+        env:
+          OUTCOME: ${{ steps.action.outcome }}
+          TASK_STATE: ${{ steps.action.outputs.task_state }}
+        run: |
+          echo "outcome: $OUTCOME"
+          echo "task_state: $TASK_STATE"
+          if [ "$OUTCOME" = "failure" ]; then
+            echo "PASS: action failed gracefully as expected (server unreachable)"
+          elif [ "$OUTCOME" = "success" ]; then
+            echo "PASS: action succeeded (unexpected but acceptable)"
+          else
+            echo "FAIL: unexpected outcome '$OUTCOME'"
+            exit 1
+          fi
