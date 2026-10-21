@@ -1,0 +1,158 @@
+# Changelog
+
+## [4.0.7](https://github.com/OctopusDeploy/await-task-action/compare/v4.0.6...v4.0.7) (2026-10-20)
+
+
+### Bug Fixes
+
+* **deps:** resolve npm audit advisories ([#367](https://github.com/OctopusDeploy/await-task-action/issues/367)) ([ab171b6](https://github.com/OctopusDeploy/await-task-action/commit/ab171b6c78593401678357b1055992dd0f3e370e))
+
+## [4.0.6](https://github.com/OctopusDeploy/await-task-action/compare/v4.0.5...v4.0.6) (2026-10-05)
+
+
+### Bug Fixes
+
+* **deps:** resolve npm audit advisories ([#351](https://github.com/OctopusDeploy/await-task-action/issues/351)) ([e2a2b9c](https://github.com/OctopusDeploy/await-task-action/commit/e2a2b9cc1df49370b3cc9bce5a1709b6c3dda78d))
+
+## [4.0.5](https://github.com/OctopusDeploy/await-task-action/compare/v4.0.4...v4.0.5) (2026-09-21)
+
+
+### Bug Fixes
+
+* **deps:** resolve npm audit advisories ([#346](https://github.com/OctopusDeploy/await-task-action/issues/346)) ([fa7b494](https://github.com/OctopusDeploy/await-task-action/commit/fa7b494f8a40ae34870fb36d5d2ce38afd6977a4))
+
+## [4.0.4](https://github.com/OctopusDeploy/await-task-action/compare/v4.0.3...v4.0.4) (2026-09-09)
+
+
+### Bug Fixes
+
+* **deps:** bump brace-expansion override to resolve DoS bypass ([#338](https://github.com/OctopusDeploy/await-task-action/issues/338)) ([c91eb70](https://github.com/OctopusDeploy/await-task-action/commit/c91eb708d0efdeb11fadce2670bbad4b9c7e4817))
+* **deps:** bump brace-expansion to resolve DoS advisory ([#333](https://github.com/OctopusDeploy/await-task-action/issues/333)) ([daf8c31](https://github.com/OctopusDeploy/await-task-action/commit/daf8c31b4690cc2e1ed8249a21a2316de6f3b403))
+* **deps:** fix npm audit vulnerabilities ([#342](https://github.com/OctopusDeploy/await-task-action/issues/342)) ([d01cfae](https://github.com/OctopusDeploy/await-task-action/commit/d01cfae60edf18b4dae152b9d558beeee1f15653))
+* **deps:** resolve new brace-expansion and js-yaml advisories ([#337](https://github.com/OctopusDeploy/await-task-action/issues/337)) ([9e0a912](https://github.com/OctopusDeploy/await-task-action/commit/9e0a91266a4ed4522c4ca4625acd5144e4b89c5c))
+* **deps:** resolve remaining npm audit advisories ([#335](https://github.com/OctopusDeploy/await-task-action/issues/335)) ([5a4be68](https://github.com/OctopusDeploy/await-task-action/commit/5a4be68046d0994ad9ec6e6503c89bc449cda840))
+
+## [4.0.3](https://github.com/OctopusDeploy/await-task-action/compare/v4.0.2...v4.0.3) (2026-07-22)
+
+
+### Bug Fixes
+
+* **deps:** bump @octopusdeploy/api-client to 3.11.5 ([#326](https://github.com/OctopusDeploy/await-task-action/issues/326)) ([1cbfba7](https://github.com/OctopusDeploy/await-task-action/commit/1cbfba72925d6187c49539e5a2744e35e46104a2))
+* **deps:** bump @octopusdeploy/api-client to 3.11.6 ([#332](https://github.com/OctopusDeploy/await-task-action/issues/332)) ([e9c23a0](https://github.com/OctopusDeploy/await-task-action/commit/e9c23a0d3bf490ca7abe55e4e78034259cdc37a5))
+* **deps:** update js-yaml to resolve DoS advisory ([#331](https://github.com/OctopusDeploy/await-task-action/issues/331)) ([3e87249](https://github.com/OctopusDeploy/await-task-action/commit/3e87249572ed11e27fd7cbe8e8181a2148c266e2))
+
+## [4.0.2](https://github.com/OctopusDeploy/await-task-action/compare/v4.0.1...v4.0.2) (2026-06-08)
+
+
+### Bug Fixes
+
+* patch transitive axios vulnerability via npm audit fix ([#307](https://github.com/OctopusDeploy/await-task-action/issues/307)) ([3e4f182](https://github.com/OctopusDeploy/await-task-action/commit/3e4f182375673250a24d0e9a6c79824684daab1a))
+* update axios to v1.17.0 ([#316](https://github.com/OctopusDeploy/await-task-action/issues/316)) ([18d2780](https://github.com/OctopusDeploy/await-task-action/commit/18d2780c7717c8f0f61a6fc40db09053c64a58c7))
+
+## [4.0.1](https://github.com/OctopusDeploy/await-task-action/compare/v4.0.0...v4.0.1) (2026-04-14)
+
+
+### Bug Fixes
+
+* **deps:** bump axios from 1.13.5 to 1.15.0 ([#296](https://github.com/OctopusDeploy/await-task-action/issues/296)) ([905f1ae](https://github.com/OctopusDeploy/await-task-action/commit/905f1aea4be3038385e9c527697a874017c3c812))
+
+## [4.0.0](https://github.com/OctopusDeploy/await-task-action/compare/v3.3.1...v4.0.0) (2025-12-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* Migrate to node 24
+
+### Features
+
+* Migrate to node 24 ([9d8c8cc](https://github.com/OctopusDeploy/await-task-action/commit/9d8c8ccc1e8f14a1133590e6c6d8645f620e9f88))
+
+## [3.3.1](https://github.com/OctopusDeploy/await-task-action/compare/v3.3.0...v3.3.1) (2025-11-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency tmp to v0.2.4 [security] ([#213](https://github.com/OctopusDeploy/await-task-action/issues/213)) ([5320dad](https://github.com/OctopusDeploy/await-task-action/commit/5320dad91b902944e0e265690dcdd0cc149c3457))
+* **deps:** update dependency tmp to v0.2.5 ([#216](https://github.com/OctopusDeploy/await-task-action/issues/216)) ([dcc2478](https://github.com/OctopusDeploy/await-task-action/commit/dcc2478ee6b9ac26862d007ff111628b974bc007))
+
+## [3.3.0](https://github.com/OctopusDeploy/await-task-action/compare/v3.2.4...v3.3.0) (2025-07-20)
+
+
+### Features
+
+* Add cancel_on_timeout option for await-task-action ([#204](https://github.com/OctopusDeploy/await-task-action/issues/204)) ([2644db4](https://github.com/OctopusDeploy/await-task-action/commit/2644db47d5cc5a37b455a4232e768cb166cab904))
+
+## [3.2.4](https://github.com/OctopusDeploy/await-task-action/compare/v3.2.3...v3.2.4) (2025-03-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @actions/core to v1.11.1 ([65bab2e](https://github.com/OctopusDeploy/await-task-action/commit/65bab2ef227703ed106128de3680fa92bbf3b54d))
+* **deps:** update dependency @octopusdeploy/api-client to v3.4.1 ([9b9f345](https://github.com/OctopusDeploy/await-task-action/commit/9b9f345ae27dedace596b7cde17b47d381774ff1))
+* **deps:** update dependency @octopusdeploy/api-client to v3.5.1 ([63ea6a9](https://github.com/OctopusDeploy/await-task-action/commit/63ea6a90d45544af20911e4775cfb87c74e0decb))
+* **deps:** update dependency @octopusdeploy/api-client to v3.5.2 ([#173](https://github.com/OctopusDeploy/await-task-action/issues/173)) ([1c78e25](https://github.com/OctopusDeploy/await-task-action/commit/1c78e25eff56af25bc90fa9e9e457bbde99e25da))
+
+## [3.2.3](https://github.com/OctopusDeploy/await-task-action/compare/v3.2.2...v3.2.3) (2024-08-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @octopusdeploy/api-client to v3.4.0 ([691288d](https://github.com/OctopusDeploy/await-task-action/commit/691288d3a079f68705ed86896034f3213d484ed8))
+
+## [3.2.2](https://github.com/OctopusDeploy/await-task-action/compare/v3.2.1...v3.2.2) (2024-06-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency tmp to v0.2.3 ([aef8f19](https://github.com/OctopusDeploy/await-task-action/commit/aef8f195a5633f9512a4f739e5495c8af22fd5de))
+* fix issue where timeout is not enforced ([5f1f8d4](https://github.com/OctopusDeploy/await-task-action/commit/5f1f8d4870cc6274dd310fe048bd09fd7e1e7119))
+
+## [3.2.1](https://github.com/OctopusDeploy/await-task-action/compare/v3.2.0...v3.2.1) (2024-02-04)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([32a4b7f](https://github.com/OctopusDeploy/await-task-action/commit/32a4b7f17155ac5766858f6904e480c2117b6107))
+* **deps:** update dependency @actions/core to v1.10.1 ([b2d7a02](https://github.com/OctopusDeploy/await-task-action/commit/b2d7a025b5643fc19bd8d715c4ffa628d2df8047))
+
+## [3.2.0](https://github.com/OctopusDeploy/await-task-action/compare/v3.1.0...v3.2.0) (2023-12-14)
+
+
+### Features
+
+* Upgrade to node 20 ([#30](https://github.com/OctopusDeploy/await-task-action/issues/30)) ([a64de79](https://github.com/OctopusDeploy/await-task-action/commit/a64de79d02efaee95699e2d16032293bffc12025))
+
+## [3.1.0](https://github.com/OctopusDeploy/await-task-action/compare/v3.0.2...v3.1.0) (2023-08-30)
+
+
+### Features
+
+* Adds support for authenticating with access token ([#20](https://github.com/OctopusDeploy/await-task-action/issues/20)) ([61861f7](https://github.com/OctopusDeploy/await-task-action/commit/61861f709a5e0e373a457156089ba8fbad4186fc))
+
+## [3.0.2](https://github.com/OctopusDeploy/await-task-action/compare/v3.0.1...v3.0.2) (2023-02-23)
+
+
+### Bug Fixes
+
+* space lookups for &gt; 30 spaces ([fe321fc](https://github.com/OctopusDeploy/await-task-action/commit/fe321fcade9758db724970d4b375c1b5e3d945f7))
+* url encoding in space names [04298896](https://github.com/OctopusDeploy/await-task-action/commit/04298896e80eb6e427e32b2a54c2e440d2c49363)
+
+## [3.0.1](https://github.com/OctopusDeploy/await-task-action/compare/v3.0.0...v3.0.1) (2023-01-31)
+
+
+### Bug Fixes
+
+* updated dependencies ([7528e2d](https://github.com/OctopusDeploy/await-task-action/commit/7528e2d30ba02102c9dfea4b47a2cdb7e45ed36a))
+
+## 3.0.0 (2022-12-13)
+
+
+### Bug Fixes
+
+* Initial version ([a086d69](https://github.com/OctopusDeploy/await-task-action/commit/a086d69f83066a87a2720e5a9642fd3d2eb66b80))
+
+
+### Miscellaneous Chores
+
+* release 3.0.0 ([8707384](https://github.com/OctopusDeploy/await-task-action/commit/8707384fc694f6f4d0acf10c7121b2dad5814ba2))
+* release 3.0.0 ([#3](https://github.com/OctopusDeploy/await-task-action/issues/3)) ([6be7aa8](https://github.com/OctopusDeploy/await-task-action/commit/6be7aa8ab75c4446948e6a1faa9576a790b852c3))
