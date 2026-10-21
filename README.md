@@ -13,6 +13,7 @@ Hardened by [Chainguard](https://www.chainguard.dev) from the upstream action at
 | v4.0.4 | [`v4.0.4`](https://github.com/chainguard-actions/OctopusDeploy-await-task-action/tree/v4.0.4) | [`f7de4aa`](https://github.com/OctopusDeploy/await-task-action/commit/f7de4aa2b3da35272eead52c2b109fbac7898c6f) |
 | v4.0.5 | [`v4.0.5`](https://github.com/chainguard-actions/OctopusDeploy-await-task-action/tree/v4.0.5) | [`05e2638`](https://github.com/OctopusDeploy/await-task-action/commit/05e26386c9e843d2105f8fbd79d8474d21d54f78) |
 | v4.0.6 | [`v4.0.6`](https://github.com/chainguard-actions/OctopusDeploy-await-task-action/tree/v4.0.6) | [`0846c27`](https://github.com/OctopusDeploy/await-task-action/commit/0846c2759c596ac2d096bf3388f611b50758a415) |
+| v4.0.7 | [`v4.0.7`](https://github.com/chainguard-actions/OctopusDeploy-await-task-action/tree/v4.0.7) | [`2d45f75`](https://github.com/OctopusDeploy/await-task-action/commit/2d45f7571a355fbb73e0150893d06840bbef870e) |
 
 ## Privacy
 
